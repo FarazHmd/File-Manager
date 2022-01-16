@@ -1,0 +1,6 @@
+#ifndef EDITING_OPS_EDITING_OPS_H
+#define EDITING_OPS_EDITING_OPS_H
+
+void hello(void);
+
+#endif //EDITING_OPS_EDITING_OPS_H

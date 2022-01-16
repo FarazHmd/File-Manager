@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ghost/Desktop/Programming/C/sys/FHMD__h/DIR_OPS.c
+stdio.h
+-
+stdlib.h
+-
+conio.h
+-
+dirent.h
+-
+string.h
+-
+sys/stat.h
+-
+DIR_OPS.h
+C:/Users/Ghost/Desktop/Programming/C/sys/FHMD__h/DIR_OPS.h
+
+C:/Users/Ghost/Desktop/Programming/C/sys/FHMD__h/DIR_OPS.h
+
