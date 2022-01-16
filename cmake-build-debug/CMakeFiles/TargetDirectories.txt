@@ -1,0 +1,3 @@
+C:/Users/Ghost/Desktop/Programming/C/File Manager/cmake-build-debug/CMakeFiles/File_Manager.dir
+C:/Users/Ghost/Desktop/Programming/C/File Manager/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ghost/Desktop/Programming/C/File Manager/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,92 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/main.c
+stdio.h
+-
+conio.h
+-
+stdlib.h
+-
+string.h
+-
+dirent.h
+-
+afxres.h
+-
+./sys/FHMD__h/DIR_OPS.c
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/FHMD__h/DIR_OPS.c
+./sys/F_HMD/EXT_OPS.c
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/F_HMD/EXT_OPS.c
+./sys/F.HMD/FILE_OPS_DEL.c
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/F.HMD/FILE_OPS_DEL.c
+./sys/FH_MD/Rename_OPS/Rename_OPS.c
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/FH_MD/Rename_OPS/Rename_OPS.c
+./sys/FHM_D/Editing_OPS.c
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/FHM_D/Editing_OPS.c
+./sys/F_LOGIN_HMD/LOGIN.c
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/F_LOGIN_HMD/LOGIN.c
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/F.HMD/FILE_OPS_DEL.c
+stdio.h
+-
+stdlib.h
+-
+dirent.h
+-
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/FHMD__h/DIR_OPS.c
+stdio.h
+-
+stdlib.h
+-
+dirent.h
+-
+string.h
+-
+sys/stat.h
+-
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/FHM_D/Editing_OPS.c
+stdio.h
+-
+conio.h
+-
+stdlib.h
+-
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/FH_MD/Rename_OPS/Rename_OPS.c
+Rename_OPS.h
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/FH_MD/Rename_OPS/Rename_OPS.h
+string.h
+-
+stdio.h
+-
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/FH_MD/Rename_OPS/Rename_OPS.h
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/F_HMD/EXT_OPS.c
+stdio.h
+-
+string.h
+-
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/F_LOGIN_HMD/LOGIN.c
+LOGIN.h
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/F_LOGIN_HMD/LOGIN.h
+string.h
+-
+stdio.h
+-
+io.h
+-
+windows.h
+-
+
+C:/Users/Ghost/Desktop/Programming/C/File Manager/sys/F_LOGIN_HMD/LOGIN.h
+

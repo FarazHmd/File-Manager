@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\File_Manager.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\File_Manager.dir/objects.a @CMakeFiles\File_Manager.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\File_Manager.dir/objects.a -Wl,--no-whole-archive  -o ..\Build\File_Manager.exe -Wl,--out-implib,libFile_Manager.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\File_Manager.dir\linklibs.rsp
