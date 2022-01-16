@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ghost/Desktop/Programming/C/sys/F.HMD/FILE_OPS_DEL.c
+FILE_OPS_DEL.h
+C:/Users/Ghost/Desktop/Programming/C/sys/F.HMD/FILE_OPS_DEL.h
+stdio.h
+-
+conio.h
+-
+stdlib.h
+-
+string.h
+-
+dirent.h
+-
+../../sys/FHMD__h/DIR_OPS.c
+C:/Users/Ghost/Desktop/Programming/C/sys/FHMD__h/DIR_OPS.c
+stdio.h
+-
+
+C:/Users/Ghost/Desktop/Programming/C/sys/F.HMD/FILE_OPS_DEL.h
+
+C:/Users/Ghost/Desktop/Programming/C/sys/FHMD__h/DIR_OPS.c
+stdio.h
+-
+stdlib.h
+-
+conio.h
+-
+dirent.h
+-
+string.h
+-
+sys/stat.h
+-
+DIR_OPS.h
+C:/Users/Ghost/Desktop/Programming/C/sys/FHMD__h/DIR_OPS.h
+
+C:/Users/Ghost/Desktop/Programming/C/sys/FHMD__h/DIR_OPS.h
+
