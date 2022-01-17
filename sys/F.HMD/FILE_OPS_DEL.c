@@ -13,7 +13,7 @@ void File_ops_Del(char path[]){
     char filesnames[Max_file_name_size][Max_files];
     int num_del;
     int del_sw_file;
-    SetConsoleTextAttribute(hConsole ,16);
+    SetConsoleTextAttribute(hConsole ,12);
     do {
 
         printf("For Delete one  File      : ['1'] \n");
