@@ -43,7 +43,7 @@ char path[Max_path_size];
 int main(const int argc, char const *argv[]) {
     LOGIN();       //Func To Authentication User
 
-    chdir("c:\\test");
+   
     char ch1;
     int flag=0;
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
