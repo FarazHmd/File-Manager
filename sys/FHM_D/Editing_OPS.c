@@ -114,7 +114,7 @@ case 2:
                 fclose(MY_FILE);
                 exit(EXIT_FAILURE);
             }
-            printf(" Input the line you want to remove : ");
+            printf(" Input the line you want to remove : (Note The Line 1 is 0 && line 2 is 1 , ...)  ");
             scanf("%d", &lno);
             lno++;
             // copy all contents to the temporary file except the specific line
