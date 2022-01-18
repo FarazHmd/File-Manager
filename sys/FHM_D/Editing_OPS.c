@@ -22,7 +22,7 @@ char FileName[Max_File_size];
     int lno, ctr = 0;
     int totalRead = 0;
    int sw_1;
-
+do{
 printf("See  Content Of File : ['1']\n");
 printf("Edit Content Of File : ['2']\n");
 printf("Delete Some Content Of File : ['3']\n");
@@ -55,6 +55,7 @@ case 1:
 
             /* Done with this file, close file to release resource */
             fclose(MY_FILE);
+            sw_1 =4;
             break;
 case 2:
     printf("Enter The  Name Of  Target File \n ");
@@ -95,6 +96,7 @@ case 2:
 
             /* Success message */
             fclose(MY_FILE);
+            sw_1 =4;
     break;
     case 3:
         printf("Enter The  Name Of  Target File \n ");
@@ -136,10 +138,12 @@ case 2:
             rename(temp, FileName); 	// rename the temporary file to original name
 
             printf("Tha Changes Was Successfully saved \n");
+            sw_1 =4;
         break;
         default:
+            printf("\nINVALID INPUT DETECTED !! \n\a");
             break;
-    }
+    }}while (sw_1 !=4);
 
     }
 
