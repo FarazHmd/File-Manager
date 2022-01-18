@@ -43,7 +43,7 @@ char path[Max_path_size];
 int main(const int argc, char const *argv[]) {
     LOGIN();       //Func To Authentication User
 
-   
+    chdir("c:\\test");
     char ch1;
     int flag=0;
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -110,7 +110,7 @@ void File_operations(int flag){
     char New_file_name[Max_file_name_size];
     char files_names[Max_file_name_size][Max_files];
     char Extension_File_OPS[Max_Extension_size];
-    int File_sw;
+    char File_sw;
 
 
     do {
@@ -125,12 +125,12 @@ void File_operations(int flag){
         printf("Copy & Move & Clone  File  :         ['7'] \n");
         printf("TO Change Working Dir  :['8'] \n");
         printf("TO  see working dir    :['9'] \n");
-        printf(" Return to the previous menu: ['10']  \n");
+        printf(" Return to the previous menu: ['#']  \n");
         printf(" Exit :  ['0'] \n");
-    printf(">>");scanf("%d",&File_sw);
+    printf(">>");scanf(" %c",&File_sw);
 
     switch (File_sw) {
-        case 1:
+        case '1':
             printf("\ncreate File in another dir  :  ['y'] , ['n']\n");
             printf(">>>");scanf(" %c",&ch_sw_dir);
             switch (ch_sw_dir) {
@@ -164,7 +164,7 @@ void File_operations(int flag){
             }
             chdir(path);
             break;
-        case 2:
+        case '2':
             printf("how much file you want create \n");
             printf("It is recommended that the number of files created should not exceed %d at a time \n",Max_files);
             printf(">>");
@@ -212,10 +212,10 @@ void File_operations(int flag){
                }
             }while (yn !='y');
             break;
-        case 3:
+        case '3':
             File_ops_Del(path);
             break;
-            case 4:
+            case '4':
 
                 system("dir");
                 printf("Enter the File Name you want to rename :\n");
@@ -225,24 +225,24 @@ void File_operations(int flag){
                 Rename_ops(file_name,New_file_name);
 
                 break;
-                case 5:
+                case '5':
            Editing_OPS();
                     break;
-                    case 6:
+                    case '6':
                         Extension_Func(Extension_File_OPS);
                         break;
-                    case 7:
+                    case '7':
                         File_CP_OPS(path);
                         break;
-                        case 8:
+                        case '8':
                             Change_path(path);
                             break;
-        case 9:
+        case '9':
             SEE_WORKING_DIR(path);
             break;
-        case 10:
+        case '#':
             flag=1;
-        case 0:
+        case '0':
             return ;
             break;
         default:
@@ -258,8 +258,8 @@ void Folder_operations(){
     char dir_Name_New[Max_Folder_name_size];
     char dir_Name[Max_Folder_name_size],yn;
     char directories[Max_Folder_name_size][Max_Folders];
-    int Folder_sw=0,check,num_Folder;
-
+    int check,num_Folder;
+    char Folder_sw;
     do{
         SetConsoleTextAttribute(hConsole ,2);
     printf("\n Create one Folder :          ['1']  \n");
@@ -270,9 +270,9 @@ void Folder_operations(){
         printf("TO See working dir    :['8'] \n");
         printf("TO Change Working Dir :['9'] \n");
     printf("Exit :  \t\t['0'] \n");
-    printf(">>");scanf("%d",&Folder_sw);
+    printf(">>");scanf(" %c",&Folder_sw);
     switch (Folder_sw) {
-        case 1:
+        case '1':
             printf("\nEnter The Dirname \n");
             scanf("%s",dir_Name);
             check = mkdir(dir_Name);
@@ -282,7 +282,7 @@ void Folder_operations(){
                 printf("Unable to create directory\n");
             }
             break;
-        case 2:
+        case '2':
             printf("how much folder you want create  ?\n");
             printf("It is recommended that the number of files created should not exceed %d at a time",Max_Folders);
             printf(">>");scanf("%d",&num_Folder);
@@ -325,13 +325,13 @@ void Folder_operations(){
             }}while (yn !='y');
 
             break;
-            case 3:
+            case '3':
                 Folder_ops_del(path);
                 break;
-            case 4:
-                Folder_sw=4;
+            case '4':
+                Folder_sw='4';
             break;
-            case 5:
+            case '5':
                 system("dir");
             printf("Enter the File Name you want to rename :\n");
             printf(">>");  gets(dir_Name);   gets(dir_Name);
@@ -340,14 +340,14 @@ void Folder_operations(){
             Rename_ops(dir_Name,dir_Name_New);
 
             break;
-            case 8:
+            case '8':
                 SEE_WORKING_DIR(path);
 
                 break;
-        case 9:
+        case '9':
             Change_path(path);
             break;
-        case 0:
+        case '0':
             return;
 
         default:
@@ -355,12 +355,12 @@ void Folder_operations(){
             break;
 
     }
-   }while (Folder_sw !=4);
+   }while (Folder_sw !='4');
 }
 
 void Folder_ops_del(){
-    int check , num_sw ,num_dir;
-    char del_path[Max_Folder_name_size];
+    int check ,num_dir;
+    char del_path[Max_Folder_name_size], num_sw ;
     do {
         printf("Delete One Folder   : [1] \n");
         printf("Delete Multiple Folder: [2] \n");
@@ -368,9 +368,9 @@ void Folder_ops_del(){
         printf("TO Change Working Dir & see working dir  :['6'] \n");
         printf("QUIT : [0]\n");
         printf(">>");
-        scanf("%d", &num_sw);
+        scanf(" %c", &num_sw);
         switch (num_sw) {
-            case 1:
+            case '1':
                 system("dir");
                 printf("Enter The path of folder to delete \n");
                 gets(del_path);
@@ -382,7 +382,7 @@ void Folder_ops_del(){
                     printf("The Folder [%s] is not deleted. \n", del_path);
                 }
                 break;
-            case 2:
+            case '2':
                 printf("Enter Number folder you want to delete \n");
                 printf(">>");scanf("%d",&num_dir);
                 for (int k = 0; k <num_dir ; ++k) {
@@ -398,20 +398,20 @@ void Folder_ops_del(){
                     }
                 }
                 break;
-            case 3:
-                num_sw=3;
+            case '3':
+                num_sw='3';
                 break;
-                case 6:
+                case '6':
                     Change_path(path);
                 SEE_WORKING_DIR(path);
                     break;
-            case 0:
+            case '0':
                 return;
             default:
                 printf("Enter the Valid Number from Options\n\a");
                 break;
         }
-    }while (num_sw!=3);
+    }while (num_sw!='3');
 }
 void File_CP_OPS(){
     char path2[Max_path_size];
