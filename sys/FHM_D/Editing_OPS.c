@@ -78,7 +78,7 @@ case 2:
 
             /* Input data to append from user */
             printf("\nEnter data to append: ");
-            gets(data);
+          
             fflush(stdin);          // To clear extra white space characters in stdin
             fgets(data, BUFFER_SIZE, stdin);
 
