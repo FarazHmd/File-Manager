@@ -9,5 +9,5 @@ In This File Manager ... Create and Copy operation can be performed in a very sp
 .
 .
 .
-For Installing Just You need To Run the  (( SETUP.exe )) And other things weel easly do for you !
+For Installing Just You need To Run the  (( SETUP.exe )) And other things will easily do for you !!
 after install You see the Shortcut on your desktop ... Run the Program And Have Fun !!
