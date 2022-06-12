@@ -23,6 +23,7 @@ void Attrib(void ) {
         printf("To undo hide file  :    ['!']\n");
         printf("To undo readonly file : ['x']\n");
         printf("Return to the previous Menu: ['B'] \n");
+         printf("EXIT program :         ['0'] \n");
         printf(">>");
         scanf(" %c", &ac);
         switch (ac) {
@@ -50,6 +51,7 @@ void Attrib(void ) {
                 strcat(last_att,filename);
                 system(last_att);
                 ReleaseMutex(hMutex);
+                system("pause");
 system("cls");
                 filename[0]='\0';
                 break;
@@ -64,7 +66,7 @@ system("cls");
                 strcat(U_att_h, filename);
                 strcat(U_att_h, U_A_h);
                 system(U_att_h);
-
+system("pause");
                 system("cls");
 
                 if (access(filename, F_OK) == 0) {
@@ -77,6 +79,7 @@ system("cls");
                 } else {
                     printf("File not Not found .. check the name and try again !! \a\n");
                 }
+                system("pause");
                 system("cls");
 
                 if (access(filename, F_OK) == 0) {
@@ -87,6 +90,7 @@ system("cls");
                 strcat(last_att,filename);
                 system(last_att);
                 ReleaseMutex(hMutex);
+                system("pause");
                 system("cls");
                 filename[0]='\0';
                 break;
@@ -113,6 +117,7 @@ system("cls");
                 strcat(last_att,filename);
                 system(last_att);
                 ReleaseMutex(hMutex);
+                system("pause");
                 system("cls");
                 filename[0]='\0';
                 break;
@@ -139,12 +144,17 @@ system("cls");
                 system(last_att);
                 ReleaseMutex(hMutex);
                 filename[0]='\0';
+                system("pause");
                 system("cls");
                 break;
             case 'b':
             case 'B':
                 as1 +=1;
                 return;
+                break;
+            case  '0':
+                exit(127);
+                
                 break;
             default:
                 printf("Enter the Valid char from Options\n\a");
