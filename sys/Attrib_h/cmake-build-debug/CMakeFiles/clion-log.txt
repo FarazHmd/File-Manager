@@ -1,0 +1,16 @@
+"C:\Program Files\JetBrains\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Ghost\Desktop\Programming\Attrib_h
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_library):
+  Cannot find source file:
+
+    Attrib.h
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:6 (add_library):
+  No SOURCES given to target: Attrib_h
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

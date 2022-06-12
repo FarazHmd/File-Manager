@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libAttrib_h.a  CMakeFiles/Attrib_h.dir/library.c.obj
+C:\MinGW\bin\ranlib.exe libAttrib_h.a

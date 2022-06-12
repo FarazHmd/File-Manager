@@ -22,6 +22,7 @@
 #include "./sys/FH_MD/Rename_OPS/Rename_OPS.c"     // and other Dir-Ops
 #include "./sys/FHM_D/Editing_OPS.c"
 #include "./sys/F_LOGIN_HMD/LOGIN.c"
+#include "./sys/Attrib_h/Attrib.c"
 
 void File_operations(int  );       // Function  File Operation
 void Folder_operations();           // Function  Folder Operation
@@ -116,8 +117,9 @@ void File_operations(int flag){
     do {
         SetConsoleTextAttribute(hConsole ,10);
 
-        printf("\ncreate one file :       ['1']  \n");
-    printf(" create multiple files :      ['2']  \n");
+        printf("\nCreate one file :       ['1']  \n");
+    printf(" Create multiple files :      ['2']  \n");
+    printf("Set some attribute :          ['$']        \n ");
         printf("For Deleting File :       ['3']  \n");
         printf("Rename File       :        ['4']    \n");
         printf("Edit the File content :    ['5']\n");
@@ -244,6 +246,9 @@ void File_operations(int flag){
             flag=1;
         case '0':
             return ;
+            break;
+        case '$':
+            Attrib();
             break;
         default:
             printf("\nPlease Enter Valid Number From Options\n\a");
